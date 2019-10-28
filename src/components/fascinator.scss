@@ -1,0 +1,31 @@
+@import '../mixins/font.scss';
+@import '../mixins/responsive.scss';
+
+.fascinator {
+  display: flex;
+  margin: auto auto;
+  @include for-phone-only {
+    flex-direction: column;
+    margin: auto 10px;
+  }
+  img {
+    @include for-phone-only {
+      transform: translate(100px);
+    }
+  }
+}
+
+.fascinatorText {
+  width: 340px;
+  transform: translate(50px, 50px);
+  @include for-phone-only {
+    transform: translate(0px, 50px);
+  }
+  p {
+    font-family: $BODONI;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0px;
+  }
+}

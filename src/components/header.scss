@@ -1,0 +1,40 @@
+@import '../mixins/icons.scss';
+@import '../mixins/font.scss';
+
+.header {
+  display: flex;
+  padding: 20px 20px 0px;
+}
+.leftMenu {
+  display: flex;
+  margin-left: auto;
+}
+
+.leftMenu > p {
+  padding-left: 20px;
+  opacity: 0.5;
+  font-size: 15px;
+  cursor: not-allowed;
+}
+
+.icon {
+  display: flex;
+  cursor: pointer;
+
+  .iconImage {
+    margin: auto;
+    background-image: $ABODE;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 35px;
+    width: 35px;
+  }
+
+  .iconText {
+    margin: auto;
+    font-family: $BODONI;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+}
